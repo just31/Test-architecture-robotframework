@@ -1,0 +1,3 @@
+# DoorwayListenerByTags.py - листенер, для общего запуска тестовых наборов, объединенным одним тегом.
+# Например, он может запустить на сайтах препрода, только тесты отмеченные тегом Smoke:
+# robot --listener "listeners/for_runs_by_tags/DoorwayListenerByTags.py;preprod" --listener allure_robotframework -i Smoke tests

@@ -1,0 +1,15 @@
+env
+.git
+.idea
+output
+pabot_results
+
+.pabotsuitenames
+debug.log
+log.html
+output.xml
+report.html
+sites_list.json
+geckodriver.log
+*.jpg
+*.png
