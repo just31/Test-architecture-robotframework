@@ -14,19 +14,16 @@
 **Команды запусков по функциональным автотестам, с использованием основных листенеров:**    
     
     pabot --processes 10 --listener "listeners/functional_tests/DoorwayCommonListener.py;parallel:229" --listener allure_robotframework tests/functional_tests/test_NAME/test_NAME_parallel - 
-    для параллельного запуска по всем сайтам Дорвея. 
+    для параллельного запуска по списку сайтов. 
     
     robot --listener "listeners/functional_tests/DoorwayCommonListener.py;consistent:54" --listener allure_robotframework tests/functional_tests/test_NAME/test_NAME.robot - 
-    для последовательного запуска по указанному числу сайтов Дорвея.  
-    
-    robot --listener listeners/functional_tests/DoorwayCommonListener.py:top --listener allure_robotframework tests/functional_tests/test_NAME/test_NAME.robot - 
-    для последователного запуска по списку на 40 топ-сайтах Дорвея.
-    
+    для последовательного запуска по указанному числу сайтов.  
+        
     robot --listener listeners/functional_tests/DoorwayCommonListener.py:preprod --listener allure_robotframework tests/functional_tests/test_NAME/test_NAME.robot - 
-    по запуску на трех сайтах препродов.
+    по запуску на препрод-сайтах.
     
     robot --listener listeners/functional_tests/DoorwayCommonListener.py:staging --listener allure_robotframework tests/functional_tests/test_NAME/test_NAME.robot - 
-    по запуску на трех сайтах стэйджинга.
+    по запуску на сайтах стэйджинга.
     
     robot --listener "listeners/functional_tests/DoorwayCommonListener.py;single:site1.com" --listener allure_robotframework tests/functional_tests/test_NAME/test_NAME.robot - 
     по запуску на указанном, в аргументах запуска, сайте.
@@ -45,7 +42,7 @@
     
     ## Вместо NAME, в командах запуска, нужно указать название функционального теста, который нужно запустить и название папки его содержащей. Например:
          robot --listener listeners/functional_tests/DoorwayCommonListener.py:preprod --listener allure_robotframework tests/functional_tests/test_acquiring/test_acquiring.robot - 
-         запуск автотеста по проверке эквайринга, на сайтах препродов. 
+         запуск указанного автотеста, на сайтах препродов. 
     
     ### Запуск тестов объединенных одним тегом, может производиться не только по тегу 'Smoke', но и по любому, другому тегу. Который может быть указан в параметрах автотестов. 
 
@@ -65,7 +62,7 @@
     robot --listener "listeners/tests_api/ApiListener.py;dev.com" --listener allure_robotframework -i Dev tests/tests_api - запуск api-тестов на dev.
               
     
-**Запуск автотеста по проверке топовых сайтов Дорвея, в рекламе:**
+**Запуск автотеста по проверке сайтов, в рекламе:**
 
     robot --listener listeners/tests_advertising/AdvertisingListener.py --listener allure_robotframework tests/tests_advertising/test_doorway_advertising.robot
     
