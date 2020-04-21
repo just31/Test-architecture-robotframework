@@ -61,11 +61,6 @@
     robot --listener "listeners/tests_api/ApiListener.py;prod.com" --listener allure_robotframework -e Dev tests/tests_api - запуск api-тестов с прода.
     robot --listener "listeners/tests_api/ApiListener.py;dev.com" --listener allure_robotframework -i Dev tests/tests_api - запуск api-тестов на dev.
               
-    
-**Запуск автотеста по проверке сайтов, в рекламе:**
-
-    robot --listener listeners/tests_advertising/AdvertisingListener.py --listener allure_robotframework tests/tests_advertising/test_doorway_advertising.robot
-    
               
 # Организация тестов
     - папка tests, содержит подпапки с различными видами автотестов: функциональные, api-тесты, нагрузочные, и т.д. 
