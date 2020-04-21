@@ -50,7 +50,6 @@
 **Примеры команд запуска, автотеста по авторизации:**
 
     robot --variable BROWSER:headlesschrome --listener "listeners/functional_tests/functional_tests_bintranet/BintranetCommonListener.py;tester_role" --listener allure_robotframework tests/functional_tests/tests_bintranet/test_authorization/test_authorization.robot - запуск автотеста по авторизации, под конкретным аккаунтом. Например, вместо tester_role, можно указать: tester_admin. Авторизация должна произойти под админом.
-
     robot --variable BROWSER:headlesschrome --listener "listeners/functional_tests/functional_tests_bintranet/BintranetCommonListener.py;main" --listener allure_robotframework tests/functional_tests/tests_bintranet/test_authorization/test_authorization.robot - запуск автотеста по  авторизации, в цикле под тремя аккаунтами: Менеджера, Логиста, Администратора.
 
 
