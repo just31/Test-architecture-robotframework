@@ -47,14 +47,14 @@
     ### Запуск тестов объединенных одним тегом, может производиться не только по тегу 'Smoke', но и по любому, другому тегу. Который может быть указан в параметрах автотестов. 
 
 
-**Пример команд запуска, автотеста по авторизации:**
+**Примеры команд запуска, автотеста по авторизации:**
 
     robot --variable BROWSER:headlesschrome --listener "listeners/functional_tests/functional_tests_bintranet/BintranetCommonListener.py;tester_role" --listener allure_robotframework tests/functional_tests/tests_bintranet/test_authorization/test_authorization.robot - запуск автотеста по авторизации, под конкретным аккаунтом. Например, вместо tester_role, можно указать: tester_admin. Авторизация должна произойти под админом.
 
     robot --variable BROWSER:headlesschrome --listener "listeners/functional_tests/functional_tests_bintranet/BintranetCommonListener.py;main" --listener allure_robotframework tests/functional_tests/tests_bintranet/test_authorization/test_authorization.robot - запуск автотеста по  авторизации, в цикле под тремя аккаунтами: Менеджера, Логиста, Администратора.
 
 
-**Пример команд запуска, api тестов:**
+**Примеры команд запуска, api автотестов:**
 
     robot --listener "listeners/tests_api/ApiListener.py;staging.com" --listener allure_robotframework -e Dev tests/tests_api - запуск api-тестов со стейджинга.
     robot --listener "listeners/tests_api/ApiListener.py;preprod.com" --listener allure_robotframework -e Dev tests/tests_api - запуск api-тестов с препрода.
