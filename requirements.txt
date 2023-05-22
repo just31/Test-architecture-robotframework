@@ -3,4 +3,4 @@ robotframework-seleniumlibrary==3.3.1
 webdrivermanager==0.7.4
 allure-robotframework==2.8.0
 robotframework-pabot==0.86
-requests==2.20.0
+requests==2.31.0
